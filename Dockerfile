@@ -16,6 +16,6 @@ RUN apt-get update && \
 
 # Install pyspark, black, yapf
 RUN mamba install --quiet --yes \
-	pyspark:3.1.* \
-	black:20.*
-	yapf:0.30.*
+	pyspark==3.1.* \
+	black==20.*
+	yapf==0.30.*
