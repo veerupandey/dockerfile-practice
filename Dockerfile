@@ -11,8 +11,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 # Install development tools
 RUN apt-get update && \
-    apt-get install -y build-essential \
-    && rm -rf /var/lib/apt/lists/*
+    apt-get install -y build-essential 
 
 # Install pyspark, black, yapf
 RUN mamba install --quiet --yes \
